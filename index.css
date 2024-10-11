@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  .task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .task-input input, .task-input select {
+    padding: 0.5rem;
+    margin-right: 1rem;
+    width: 30%;
+  }
+  
+  #add-task {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .task-list {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-list ul {
+    list-style: none;
+  }
+  
+  .task-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .task-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .task-completed {
+    text-decoration: line-through;
+    color: grey;
+  }
+  
+  @media (max-width: 768px) {
+    .task-input {
+      flex-direction: column;
+    }
+  
+    .task-input input, .task-input select {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }  

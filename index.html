@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Dashboard</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>Task Dashboard</h1>
+  </header>
+
+  <main>
+    <section class="task-input">
+      <input type="text" id="task-title" placeholder="Enter task title...">
+      <select id="task-category">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="date" id="task-deadline">
+      <button id="add-task">Add Task</button>
+    </section>
+
+    <section class="task-list">
+      <h2>Your Tasks</h2>
+      <ul id="task-container"></ul>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
